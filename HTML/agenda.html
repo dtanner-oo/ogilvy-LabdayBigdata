@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		
+	<!-- Scripts -->
+	<script type="text/javascript">
+        var arrMonth = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+        function countdownGo(yy, mm, dd) {
+            var today = new Date();
+            var cYear = today.getFullYear();
+            var cMonth = today.getMonth();
+            var cDay = today.getDate();
+            var cHours = today.getHours()
+            var cMinutes = today.getMinutes()
+            var cSeconds = today.getSeconds()
+            var cDateStr = arrMonth[cMonth] + " " + cDay + ", " + cYear + " " + cHours + ":" + cMinutes + ":" + cSeconds;
+            var fDateStr = mm + " " + dd + " " + yy + " 13:00:00"; ;
+            var dds = Date.parse(fDateStr) - Date.parse(cDateStr);
+            var days = Math.floor(dds / (60 * 60 * 1000 * 24) * 1);
+            var hours = Math.floor((dds % (60 * 60 * 1000 * 24)) / (60 * 60 * 1000) * 1);
+            var mins = Math.floor(((dds % (60 * 60 * 1000 * 24)) % (60 * 60 * 1000)) / (60 * 1000) * 1);
+            var secs = Math.floor((((dds % (60 * 60 * 1000 * 24)) % (60 * 60 * 1000)) % (60 * 1000)) / 1000 * 1);
+            if (hours < 10) { hours = "0" + hours; }
+            if (mins < 10) { mins = "0" + mins; }
+            if (secs < 10) { secs = "0" + secs; }
+            if (days == 0) {
+                document.getElementById("oo_dayValue").innerHTML = "Today!!!";
+            } else {
+                document.getElementById("oo_dayValue").innerHTML = String(days) + " Days";
+            }
+            document.getElementById("oo_cTime").innerHTML = String(hours) + " h : " + String(mins) + " m : " + String(secs) + " s";
+            var t = setTimeout("countdownGo('2013','Jun','06')", 1000);
+        }
+        var t = setTimeout("countdownGo('2013','Jun','06')", 1000);  
+    </script>
+	<!-- CSS files -->
+	<link rel="stylesheet" href="styles/reset.css" type="text/css" />
+	<link rel="stylesheet" href="styles/main.css" type="text/css" />
+	
+	<!-- Page title -->
+	<title>Ogilvy Lab Day Live - Agenda</title>
+	
+</head>
+
+<body>
+
+	<div id="oo_mainWrapper">
+		<div id="oo_mainContainer">
+			<!-- Main header image -->
+			<div id="oo_header">
+				<a href="index.html" title="Lab Day Live"><img src="images/Banner.jpg" title="Big data. The big debate" alt="Big data. The big debate" /></a>
+			</div>
+			<!-- Main navigation -->
+			<ul id="oo_mainNav">
+				<li class="oo_navItem"><a href="index.html" title="About">About</a></li>
+				<li class="oo_navItem"><a href="speakers.html" title="Speakers">Speakers</a></li>
+				<li class="oo_navItem oo_selected"><a href="agenda.html" title="Agenda">Agenda</a></li>
+				<li class="oo_navItem"><a href="exhibitors.html" title="Exhibitors">Exhibitors</a></li>
+				<li class="oo_navItem"><a href="inspire-me.html" title="Inspire me">Inspire me</a></li>
+				<li class="oo_navItem"><a href="find-us.html" title="Find Us">Find Us</a></li>
+				<li class="oo_navItem"><a href="live-streaming.html" title="Live Streaming">Live Streaming</a></li>
+				<li class="oo_navItem"><a href="funders.html" title="Funders">Funders</a></li>
+				<li class="oo_navItem oo_lastNavItem"><a href="tickets.html" title="Tickets">Tickets</a></li>
+			</ul>
+			
+			<div id="oo_countdownTimer">
+				<span class="oo_cHeader">6<sup>th</sup> June 2013</span>
+				<p>Countdown to the Lab Day</p>
+				<p><span class="oo_cDays"><span id="oo_dayValue"></span></span><br />
+				<span class="oo_cTime" id="oo_cTime"></span></p>
+			</div>
+			
+			<!-- Main content -->
+			<div id="oo_contentMain">
+				<div id="oo_contentLeft">
+					<h1>Lab Day <span>Agenda</span></h1>
+					<p>The day itself is built around three key pillars - addressing critical areas of potential, and the fears that could prevent their adoption.</p>
+					<ol>
+						<li>
+							<strong>A Smarter World</strong><br /><em>Graceful automation or intimidating robotics?</em><br /><br />Data can make the world smarter, safer and fairer - reinventing our definition and expectations of society.  Data can make traditional processes work better - work as they should.  But is the automation that promises such progress truly benign?
+						</li>
+						<li>
+							<strong>Richer Experiences</strong><br /><em>The power of immersion or the fear of invasion?</em><br /><br />A look at how can data enrich our stories, our newspapers, our advertising - and even the objects we hold and want and use everyday.  Is our future an internet of things - or an internet of threats?
+						</li>
+						<li>
+							<strong>Human Understanding</strong><br /><em>Is to be understood to be served - or controlled?</em><br /><br />Through data, brands, governments and people have the chance to be closer than ever before, promising a level of service that verges on the telepathic.  But how do we navigate the privacy issues that dominate this space?  And is hyper-individualised marketing and government even the right tactic?
+						</li>
+					</ol>
+					<p>Data is the biggest force for change since the Industrial Revolution - reinventing institutions and accepted processes.  But will it be a force for good or bad?  Realised through invasive marketing or tailored services?  Will our future be made of electric sheep, or connected, empowered individuals? Come and add your voice to the data-debate.</p>
+				</div>
+				<!-- add class 'oo_countdownMargin if using the coundown timer -->
+				<div id="oo_contentRight" class="oo_countdownMargin">
+					<!--<a href="http://dmic.org.uk/register-big-data-lab-day/" title="Apply for tickets" target="_blank" class="oo_ticketButton">Tickets</a>-->
+					<!-- twitter module -->
+					<script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
+					<script type="text/javascript">
+						new TWTR.Widget({
+							version: 2,
+							type: 'search',
+							search: '#Ogilvylabday',
+							interval: 6000,
+							title: '',
+							subject: '#Ogilvylabday',
+							width: 250,
+							height: 300,
+							theme: {
+								shell: {
+									background: '#663a16',
+									color: '#ffffff',
+									padding: '2px'
+								},
+								tweets: {
+									background: '#ffffff',
+									color: '#444444',
+									links: '#cc0000'
+								}
+							},
+							features: {
+								scrollbar: false,
+								loop: true,
+								live: true,
+								hashtags: true,
+								timestamp: true,
+								avatars: true,
+								toptweets: true,
+								behavior: 'all'
+							}
+						}).render().start();
+					</script>
+					<noscript>
+						<p>Javascript needs to be enabled to view the Twitter module</p>
+					</noscript>
+					<p>&nbsp;</p>
+				</div>
+				<span class="clear"></span>
+			</div>
+			<a href="mailto:lucy.rogers@ogilvy.com" class="oo_contactLink" title="Contact us">Contact us</a>
+		</div>
+	</div>
+
+</body>
+
+</html>

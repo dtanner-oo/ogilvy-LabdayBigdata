@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		
+	<!-- Scripts -->
+	<script type="text/javascript">
+        var arrMonth = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+        function countdownGo(yy, mm, dd) {
+            var today = new Date();
+            var cYear = today.getFullYear();
+            var cMonth = today.getMonth();
+            var cDay = today.getDate();
+            var cHours = today.getHours()
+            var cMinutes = today.getMinutes()
+            var cSeconds = today.getSeconds()
+            var cDateStr = arrMonth[cMonth] + " " + cDay + ", " + cYear + " " + cHours + ":" + cMinutes + ":" + cSeconds;
+            var fDateStr = mm + " " + dd + " " + yy + " 13:00:00"; ;
+            var dds = Date.parse(fDateStr) - Date.parse(cDateStr);
+            var days = Math.floor(dds / (60 * 60 * 1000 * 24) * 1);
+            var hours = Math.floor((dds % (60 * 60 * 1000 * 24)) / (60 * 60 * 1000) * 1);
+            var mins = Math.floor(((dds % (60 * 60 * 1000 * 24)) % (60 * 60 * 1000)) / (60 * 1000) * 1);
+            var secs = Math.floor((((dds % (60 * 60 * 1000 * 24)) % (60 * 60 * 1000)) % (60 * 1000)) / 1000 * 1);
+            if (hours < 10) { hours = "0" + hours; }
+            if (mins < 10) { mins = "0" + mins; }
+            if (secs < 10) { secs = "0" + secs; }
+            if (days == 0) {
+                document.getElementById("oo_dayValue").innerHTML = "Today!!!";
+            } else {
+                document.getElementById("oo_dayValue").innerHTML = String(days) + " Days";
+            }
+			document.getElementById("oo_cTime").innerHTML = String(hours) + " h : " + String(mins) + " m : " + String(secs) + " s";
+            var t = setTimeout("countdownGo('2013','Jun','06')", 1000);
+        }
+        var t = setTimeout("countdownGo('2013','Jun','06')", 1000);  
+    </script>
+	<!-- CSS files -->
+	<link rel="stylesheet" href="styles/reset.css" type="text/css" />
+	<link rel="stylesheet" href="styles/main.css" type="text/css" />
+	
+	<!-- Page title -->
+	<title>Ogilvy Lab Day Live - Big Data</title>
+	
+</head>
+
+<body>
+
+	<div id="oo_mainWrapper">
+		<div id="oo_mainContainer">
+			
+			<div id="oo_header">
+				<a href="index.html" title="Lab Day Live"><img src="images/Banner.jpg" title="Big data. The big debate" alt="Big data. The big debate" /></a>
+			</div>
+			
+			<ul id="oo_mainNav">
+				<li class="oo_navItem oo_selected"><a href="index.html" title="About">About</a></li>
+				<li class="oo_navItem"><a href="speakers.html" title="Speakers">Speakers</a></li>
+				<li class="oo_navItem"><a href="agenda.html" title="Agenda">Agenda</a></li>
+				<li class="oo_navItem"><a href="exhibitors.html" title="Exhibitors">Exhibitors</a></li>
+				<li class="oo_navItem"><a href="inspire-me.html" title="Inspire me">Inspire me</a></li>
+				<li class="oo_navItem"><a href="find-us.html" title="Find Us">Find Us</a></li>
+				<li class="oo_navItem"><a href="live-streaming.html" title="Live Streaming">Live Streaming</a></li>
+				<li class="oo_navItem"><a href="funders.html" title="Funders">Funders</a></li>
+				<li class="oo_navItem oo_lastNavItem"><a href="tickets.html" title="Tickets">Tickets</a></li>
+			</ul>
+			
+			<div id="oo_countdownTimer">
+				<span class="oo_cHeader">6<sup>th</sup> June 2013</span>
+				<p>Countdown to the Lab Day</p>
+				<p><span class="oo_cDays"><span id="oo_dayValue"></span></span><br />
+				<span class="oo_cTime" id="oo_cTime"></span></p>
+			</div>
+			
+			<div id="oo_contentMain">
+				<div id="oo_contentLeft">
+					<h1>What is big data: <span>Ogilvy Lab Day</span></h1>
+					<h2>We are entering a new era - the age of BIGdata.</h2>
+					<p>In this new world, our actions, thoughts and feelings are captured and stored - forever. It may look like 1s and 0s, but this data is the story of our lives, becoming ever more personal and human: an electronic, shared DNA.  By understanding data, brands and people have an opportunity to be closer than ever before. This is a source of great, undeniable power - but with great power comes great responsibility.  With change, come challenges.</p>
+					<p>Whilst the age of data is connected and pervasive, it is far from benign.  Used intuitively, data can create personal, enriched and compelling experiences - both on and offline - and reinvent marketing in a way not seen since the advent of television advertising. Used irresponsibly, it can leave us feeling that our privacy has been invaded - or our freedom threatened.  Beyond marketing, this tension is even starker: data can be used for good, bad or evil purposes; behind every social advance lie equal and opposite dangers.</p>
+					<!--
+					<iframe width="560" height="315" src="http://www.youtube.com/embed/DnQSS5Slf6U" frameborder="0" allowfullscreen></iframe>
+					-->
+					<p>For some, the means will always justify the ends.  For others, intrusion is an unacceptable danger.  To realise the true potential of data we, as marketers, need to cut through the scare-mongering and convince people of its benefits and its relevance. This responsibility drives many of the issues surrounding data.  The dilemma starts - and ends - not with numbers but with <em>people</em>.</p>
+					<p>Ogilvy is leading the way in setting a vision for data that recognises these challenges - as well as its humanity; a vision that understands the potential of data to ignite the communications industry.  Through the 11th edition of Ogilvy &amp; Mather's Digital Innovation Lab Day, our ambition is to inspire and inform you, by addressing some of the critical questions of our age;</p>
+					<ul>
+						<li><strong>Where this data exists</strong> - how it is growing, and the types of technology being developed to track, collect and<br />visualise it</li>
+						<li><strong>What you can (and should) do with it</strong> - see case studies of some of the most inspirational uses of data in today's marketing world</li>
+						<li><strong>How it is changing the world</strong> - considering the future of medicine, entertainment, government, finance and beyond</li>
+						<li><strong>Where consumers sit in this new world</strong> - and introducing the data superheros and equipment needed to inspire and reach them</li>
+					</ul>
+				</div>
+				<!-- add class 'oo_countdownMargin if using the coundown timer -->
+				<div id="oo_contentRight" class="oo_countdownMargin">
+					<!--<a href="http://dmic.org.uk/register-big-data-lab-day/" title="Apply for tickets" target="_blank" class="oo_ticketButton">Tickets</a>-->
+					<!-- twitter module -->
+					<script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
+					<script type="text/javascript">
+						new TWTR.Widget({
+							version: 2,
+							type: 'search',
+							search: '#Ogilvylabday',
+							interval: 6000,
+							title: '',
+							subject: '#Ogilvylabday',
+							width: 250,
+							height: 300,
+							theme: {
+								shell: {
+									background: '#663a16',
+									color: '#ffffff',
+									padding: '2px'
+								},
+								tweets: {
+									background: '#ffffff',
+									color: '#444444',
+									links: '#663a16'
+								}
+							},
+							features: {
+								scrollbar: false,
+								loop: true,
+								live: true,
+								hashtags: true,
+								timestamp: true,
+								avatars: true,
+								toptweets: true,
+								behavior: 'all'
+							}
+						}).render().start();
+					</script>
+					<noscript>
+						<p>Javascript needs to be enabled to view the Twitter module</p>
+					</noscript>
+					<p>&nbsp;</p>
+				</div>
+				<span class="clear"></span>
+			</div>
+			<a href="mailto:lucy.rogers@ogilvy.com" class="oo_contactLink" title="Contact us">Contact us</a>
+		</div>
+	</div>
+
+</body>
+
+</html>

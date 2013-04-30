@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+	<!-- Scripts -->
+	
+	<!-- CSS files -->
+	<link rel="stylesheet" href="styles/reset.css" type="text/css" />
+	<link rel="stylesheet" href="styles/main.css" type="text/css" />
+	
+	<!-- Page title -->
+	<title>Ogilvy Lab Day Live</title>
+	
+</head>
+
+<body>
+
+	<div id="oo_mainWrapper">
+		<div id="oo_mainContainer">
+			<!-- Main header image -->
+			<div id="oo_header">
+				<a href="" title=""><img src="" title="" alt="" /></a>
+			</div>
+			<!-- Main navigation -->
+			<ul id="oo_mainNav">
+				<li class="oo_navItem oo_selected"><a href="index.html" title="About">About</a></li>
+				<li class="oo_navItem"><a href="speakers.html" title="Speakers">Speakers</a></li>
+				<li class="oo_navItem"><a href="agenda.html" title="Agenda">Agenda</a></li>
+				<li class="oo_navItem"><a href="exhibitors.html" title="Exhibitors">Exhibitors</a></li>
+				<li class="oo_navItem"><a href="inspire-me.html" title="Inspire me">Inspire me</a></li>
+				<li class="oo_navItem"><a href="find-us.html" title="Find Us">Find Us</a></li>
+				<li class="oo_navItem oo_lastNavItem"><a href="tickets.html" title="Tickets">Tickets</a></li>
+			</ul>
+			
+			<div id="oo_countdownTimer">
+				<h2>1<sup>st</sup> June 2013</h2>
+				<p>Countdown to the Lab Day</p>
+				<p><span class="oo_cDays"><span id="oo_dayValue">--</span> Days</span><br />
+				<span class="oo_cTime"><span id="oo_hourValue">--</span> h : <span id="oo_minuteValue">--</span> m : <span id="oo_secondValue">--</span> s</span></p>
+			</div>
+			
+			<!-- Main content -->
+			<div id="oo_contentMain">
+				<div id="oo_contentLeft">
+					<!-- titles -->
+					<h1>Main page <span>heading</span></h1>
+					<h2>Second heading</h2>
+					<h3>Third heading</h3>
+					<h4>Fourth heading</h4>
+					<!-- paragraph text -->
+					<p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper leo at nisi facilisis egestas. Vestibulum nec nisl nunc. Sed dapibus aliquet mattis. Nam sodales sodales purus sit amet lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam cursus rhoncus risus sed consectetur. Nam feugiat ullamcorper elementum. Quisque faucibus imperdiet massa vel eleifend. In et mi nec ipsum rutrum rhoncus. Vestibulum ut dolor est. Vivamus semper nisl in elit dignissim feugiat. In non lorem metus with a <a href="" title="">link</a></p>
+					<!-- lists -->
+					<ul>
+						<li>list item number 1</li>
+						<li>list item number 2</li>
+						<li>list item number 3</li>
+						<li>list item number 4</li>
+					</ul>
+					<ol>
+						<li>list item number 1</li>
+						<li>list item number 2</li>
+						<li>list item number 3</li>
+						<li>list item number 4</li>
+					</ol>
+					<!-- Speaker bio -->
+					<div class="oo_speakerBio">
+						<img src="images/speakers/AndyKinsella.jpg" title="Speaker Name" alt="Speaker Name" />
+						<h4>Speaker Name</h4>
+						<p class="oo_speakerTitle">Speakers job title, and company</p>
+						<p>Some introduction text about the speaker</p>
+						<p><a href="" title="">A link for the speaker</a></p>
+						<span class="clear"></span>
+					</div>
+					<!-- exhibitors and other image collections -->
+					<ul class="oo_imageCollection oo_noDisc">
+						<li><a href="" title="Mynd Play"><img src="images/exhibitors/myndplay.jpg" alt="Mynd Play" title="Mynd Play" /></a></li>
+						<li><a href="" title="Karen Palmer"><img src="images/exhibitors/karenpalmer.jpg" alt="Karen Palmer" title="Karen Palmer" /></a></li>
+						<li><a href="" title="Hide and Seek"><img src="images/exhibitors/hideandseek.jpg" alt="Hide and Seek" title="Hide and Seek" /></a></li>
+					</ul>
+					<span class="clear"></span>
+				</div>
+				<!-- add class 'oo_countdownMargin if using the coundown timer -->
+				<div id="oo_contentRight" class="oo_countdownMargin">
+					<!-- twitter module -->
+					<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+					<script>
+						new TWTR.Widget({
+							version: 2,
+							type: 'search',
+							search: 'LTF2012',
+							interval: 6000,
+							title: '',
+							subject: '#LTF2012',
+							width: 250,
+							height: 300,
+							theme: {
+								shell: {
+									background: '#663a16',
+									color: '#ffffff',
+									padding: '2px'
+								},
+								tweets: {
+									background: '#ffffff',
+									color: '#444444',
+									links: '#cc0000'
+								}
+							},
+							features: {
+								scrollbar: false,
+								loop: true,
+								live: true,
+								hashtags: true,
+								timestamp: true,
+								avatars: true,
+								toptweets: true,
+								behavior: 'all'
+							}
+						}).render().start();
+					</script>
+				</div>
+				<span class="clear"></span>
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+/* LabDay template CSS */
+
+body{font-size:62.5%; font-family:arial, verdana; font-weight:normal; background:#f9f9e0;}
+
+/* Headings and text */
+
+h1{font-weight:bold; font-size:2em; margin-bottom:20px;}
+h1 span{color:#9e6c43;}
+h2{font-weight:bold; font-size:1.7em; margin-bottom:10px;}
+h3{font-weight:bold; font-size:1.5em; margin-bottom:10px;}
+h4{font-weight:bold; font-size:1.3em; margin-bottom:5px;}
+p{font-size:1.2em; margin-bottom:15px; line-height:1.4em;}
+strong{font-weight:bold;}
+em{font-style: italic;}
+a{color:#9e6c43;}
+a:hover{color:#b6dbd2;}
+
+ul{list-style-position:outside; list-style-type:disc; margin-bottom:15px;}
+ol{list-style-position:outside; list-style-type:decimal; margin-bottom:15px;}
+ul li, ol li{margin-left:25px; font-size:1.2em; margin-bottom:5px; line-height:1.4em;}
+
+iframe{margin-bottom:10px;}
+.clear{clear:both; display:block;}
+
+/* Structure */
+#oo_mainWrapper{display:block; width:100%; padding-bottom:20px;}
+#oo_mainWrapper #oo_mainContainer{display:block; width:970px; background:#ffffff; margin:0 auto; padding-bottom:20px; box-shadow:0 0 5px 2px #ccc;}
+
+/* Header */
+#oo_header{display:block; width:970px; height:125px;}
+
+/* Main Nav */
+#oo_mainNav{display:block; width:960px; height:15px; background:#663a16; padding:5px; margin:0 0 40px 0;}
+#oo_mainNav li{display:block; float:left; height:15px; padding:0 10px; margin:0px; border-right:2px solid #ffffff;}
+#oo_mainNav li.oo_lastNavItem{border-right:0px;}
+#oo_mainNav li.oo_selected a{color:#b6dbd2;}
+#oo_mainNav li a{display:block; height:15px; line-height:15px; text-transform:uppercase; text-decoration:none; color:#ffffff; font-weight:bold;}
+#oo_mainNav li a:hover{color:#b6dbd2;}
+
+/* Main content columns */
+#oo_contentLeft{display:block; width:670px; float:left; padding-left:15px; padding-right:10px; border-right:1px dashed #666666;}
+#oo_contentRight{display:block; width:260px; float:right; padding-right:5px; padding-left:9px;}
+
+/* Countdown timer */
+#oo_countdownTimer{display:block; width:200px; height:110px; padding:5px; background:#9e6c43; color:#ffffff; border-top-left-radius:10px; border-bottom-right-radius:10px; position:absolute; margin-left: 740px; margin-top:-80px; box-shadow:0px 3px 7px 0px #333;}
+#oo_countdownTimer span.oo_cHeader{font-size:2.3em; font-weight:bold; margin-bottom:10px; display:block;}
+#oo_countdownTimer sup{font-size:0.8em; vertical-align:text-top;}
+#oo_countdownTimer .oo_cDays{font-size:1.9em; font-weight:bold;}
+#oo_countdownTimer .oo_cTime{line-height:1.9em;}
+.oo_countdownMargin{margin-top:60px;}
+
+/* Speakers */
+.oo_speakerBio{display:block; width:100%; margin-bottom:15px;}
+.oo_speakerBio h2{text-transform:uppercase; font-size:1.2em;}
+.oo_speakerBio img{width:74px; height:87px; float:left; margin-right:10px; margin-bottom:5px;}
+.oo_speakerBio p{margin-bottom:5px; margin-left:84px;}
+.oo_speakerBio p.oo_speakerTitle{color:#663a16; font-weight:bold;}
+
+/* Agenda */
+ul.oo_noDisc{list-style-type:none;}
+ul.oo_noDisc li{margin:0px;}
+
+ul.oo_imageCollection li{display:block; width:220px; height:130px; float:left;}
+
+/* Twitter widget */
+.twtr-widget h3{font-size: 13px !important;}
+.twtr-widget h4{padding:2px !important;}
+#twtr-widget-1 .twtr-tweet a {color:#D42E12 !important;}
+
+.oo_contactLink{display:block; float:right; margin-right:15px;}
+.oo_ticketButton{display:block; width:250px; height:50px; margin-bottom:15px; background:#b6dbd2; border-top-left-radius:10px; border-bottom-right-radius:10px; line-height:50px; text-align:center; font-size:1.6em; font-weight:bold; text-decoration:none; color:#663a16;}
+.oo_ticketButton:hover{text-decoration:underline; color:#663a16;}
