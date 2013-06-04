@@ -16,7 +16,7 @@
             var cMinutes = today.getMinutes()
             var cSeconds = today.getSeconds()
             var cDateStr = arrMonth[cMonth] + " " + cDay + ", " + cYear + " " + cHours + ":" + cMinutes + ":" + cSeconds;
-            var fDateStr = mm + " " + dd + " " + yy + " 13:00:00"; ;
+            var fDateStr = mm + " " + dd + " " + yy + " 09:30:00"; ;
             var dds = Date.parse(fDateStr) - Date.parse(cDateStr);
             var days = Math.floor(dds / (60 * 60 * 1000 * 24) * 1);
             var hours = Math.floor((dds % (60 * 60 * 1000 * 24)) / (60 * 60 * 1000) * 1);
@@ -40,7 +40,7 @@
 	<link rel="stylesheet" href="styles/main.css" type="text/css" />
 	
 	<!-- Page title -->
-	<title>Ogilvy Lab Day Live - Big Data</title>
+	<title>Ogilvy Lab Day Live - Funders</title>
 	
 </head>
 

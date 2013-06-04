@@ -58,8 +58,8 @@ iframe{margin-bottom:10px;}
 
 /* Agenda */
 ul.oo_noDisc{list-style-type:none;}
-ul.oo_noDisc li{margin:0px;}
-
+ul.oo_noDisc li{margin:0 0 25px 0;}
+ul.oo_noDisc li em.red {color:#f00f0f;}
 ul.oo_imageCollection li{display:block; width:220px; height:130px; float:left;}
 
 /* Twitter widget */
